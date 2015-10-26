@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="boggleApp">
+<head>
+    <link rel="stylesheet" type="text/css" href="App/css/boggle.css">
+    <title>Boggle Solver</title>
+</head>
+<body ng-controller="appController" style="background-color:darkgrey">
+<div>
+    <input id="grid00" ng-model="grid[0][0]">
+    <input id="grid01" ng-model="grid[0][1]">
+    <input id="grid02" ng-model="grid[0][2]">
+    <input id="grid03" ng-model="grid[0][3]">
+</div>
+<div>
+    <input id="grid10" ng-model="grid[1][0]">
+    <input id="grid11" ng-model="grid[1][1]">
+    <input id="grid12" ng-model="grid[1][2]">
+    <input id="grid13" ng-model="grid[1][3]">
+</div>
+<div>
+    <input id="grid20" ng-model="grid[2][0]">
+    <input id="grid21" ng-model="grid[2][1]">
+    <input id="grid22" ng-model="grid[2][2]">
+    <input id="grid23" ng-model="grid[2][3]">
+</div>
+<div>
+    <input id="grid30" ng-model="grid[3][0]">
+    <input id="grid31" ng-model="grid[3][1]">
+    <input id="grid32" ng-model="grid[3][2]">
+    <input id="grid33" ng-model="grid[3][3]">
+</div>
+<input type="button" id="bCalculate" ng-click="calculate()" value = "Go!">
+
+<script src="App/lib/angular.js"></script>
+<script src="App/boggleApp.js"></script>
+<script src="App/dictionary.js"></script>
+</body>
+</html>
